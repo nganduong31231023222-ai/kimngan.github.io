@@ -230,23 +230,32 @@ h3 {
 }
 
 .skills {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust spacing as needed */
+    margin-top: 16px;
+}
+
+.skill-container {
+    flex: 1 1 180px; /* Responsive width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-title {
+    text-align: center;
+    padding: 8px 12px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    font-weight: 500;
+    width: 100%;
 }
 
 .skills:last-child {
     margin-bottom: 20px;
 }
 
-.skill-container {
-    margin-top: 10px;
-    height: 20px;
-}
-
-.skill-title {
-    font-size: 75%;
-    font-weight: 700;
-    margin: 0;    
-}
 
 .skill-bg {
     background: #eee;
